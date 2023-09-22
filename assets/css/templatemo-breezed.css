@@ -380,7 +380,7 @@ header
 
 .header-area {
   position: absolute;
-  top: 40px;
+  top: 50px;
   left: 0px;
   right: 0px;
   z-index: 100;
@@ -397,7 +397,7 @@ header
 }
 
 .header-area .main-nav .logo {
-  line-height: 80px;
+  /* line-height: 80px; */
   color: #fff;
   font-size: 28px;
   font-weight: 700;
@@ -452,11 +452,6 @@ header
     background-color: #fff;
     margin-left: 0px;
   }
-}
-
-.header-area .main-nav .nav .search-icon a:hover {
-  opacity: 1;
-  color: #5fb759!important;
 }
 
 .header-area .main-nav .nav li a {
@@ -584,7 +579,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #1e1e1e;
+  background-color: #ffffff;
   display: block;
   position: absolute;
   width: 30px;
@@ -595,7 +590,7 @@ header
 .background-header .main-nav .menu-trigger span,
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #1e1e1e;
+  background-color: #ffffff;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -604,7 +599,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #1e1e1e;
+  background-color: #ffffff;
   display: block;
   position: absolute;
   width: 30px;
@@ -715,6 +710,11 @@ header
     height: 80px;
     box-shadow: none;
     text-align: center;
+  }
+
+  .sticky-logo{
+    position: fixed !important;
+    top: -30px !important; 
   }
   .header-area .container {
     padding: 0px;
@@ -1063,6 +1063,10 @@ features
   margin-bottom: 50px;
 }
 
+#features .features-item h3{
+  margin-bottom: 1rem;
+}
+
 .features-item .features-icon {
   float: left;
 }
@@ -1375,6 +1379,15 @@ footer {
   padding: 20px 0px;
   background: #4FA35E;
   background: linear-gradient(145deg, #4FA35E 0%, rgba(104,204,152,1) 100%);
+}
+
+footer .footer-nav-item:hover{
+  color: white;
+  font-size: large;
+}
+
+footer .footer-nav-item{
+  color: rgb(215, 212, 212)
 }
 
 /* 
@@ -1746,7 +1759,7 @@ portfolio
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.team .member {
+/* .team .member {
   position: relative;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 40px;
@@ -1799,10 +1812,99 @@ portfolio
 }
 
 .team .member p {
-  /* margin: 10px 0 0 0; */
   font-size: 12px;
+} */
+.our-team{
+  border: 1px solid #d3d3d3;
+  position: relative;
+  overflow: hidden;
 }
-
+.our-team img{
+  width: 100%;
+  height: 420px;
+}
+.our-team .team-content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 45px 18px;
+  background: rgba(0,0,0,0.7);
+  transform: translateX(-100%);
+  transition: all 0.20s ease 0s;
+}
+.our-team:hover .team-content{
+  transform: translateX(0);
+}
+.our-team .team-content .post-title{
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.our-team .team-content .post{
+  font-size: 14px;
+  color: #cb95e1;
+  display: block;
+  margin-bottom: 20px;
+}
+.our-team .description{
+  font-size: 14px;
+  line-height: 25px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.our-team .team_social{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+.our-team .team_social li{
+  display: inline-block;
+  margin-right: 5px;
+}
+.our-team .team_social li a{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #f5f5f5;
+  font-size: 17px;
+  color: #f5f5f5;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  transition: border 0.3s ease 0s;
+}
+.our-team .team_social li a:hover{
+  border-color: transparent;
+}
+.our-team .team-prof{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: right;
+  padding: 20px 16px;
+  background: rgba(0,0,0,0.7);
+  transform: translateX(0);
+  transition: all 0.20s ease 0s;
+}
+.our-team:hover .team-prof{
+  transform: translateX(100%);
+}
+.our-team .team-prof .post-title{
+  font-size: 18px;
+  color: #fff;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+}
+.our-team .team-prof .post{
+  font-size: 14px;
+  color: #cb95e1;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 990px) {
+  .our-team{ margin-bottom: 20px; }
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -2027,7 +2129,7 @@ portfolio
 }
 
 .services .icon-box:hover h4 a {
-  color: #47b2e4;
+  color: rgba(79,163,94, 0.9);
 }
 
 
@@ -2105,6 +2207,9 @@ portfolio
   margin-bottom: 0;
 }
 
+.recent-posts .gy-4 .col-xl-3 {
+  margin-top: 1rem;
+}
 
 
 /* Features Section - Home Page
@@ -2207,20 +2312,23 @@ portfolio
   z-index: 2;
 }
 
-
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(79,163,94, 0.2), rgba(79,163,94, 0.1)), url("/assets/images/cta-home.jpg") fixed center center;
+  background: linear-gradient(rgba(79,163,94, 0.2), rgba(79,163,94, 0.1)), url("/assets/images/home-cta.JPG") fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
 
-.cta h3 {
+.cta-quote {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
+  /* background-color: #18de4d; */
+  margin: 10px;
+  /* padding: 20px; */
+  border-radius: 1rem;
 }
 
 .cta p {
