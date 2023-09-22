@@ -306,7 +306,7 @@ a.text-button-icon:hover i {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #4FA35E;
+  color: black;
 }
 
 .section-title h2::before {
@@ -424,41 +424,12 @@ header
   z-index: 999;
 }
 
-.header-area .main-nav .nav li {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header-area .main-nav .nav .search-icon {
-  float: right;
-  margin-left: 15px;
-}
-
-.header-area .main-nav .nav .search-icon a {
-  background-color: #fff;
-  color: #5fb759;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  text-align: center;
-  line-height: 40px;
-}
-
-@media (max-width: 767px) {
-  .header-area .main-nav .nav .search-icon {
-    float: none;
-    text-align: center;
-    width: 100%;
-    background-color: #fff;
-    margin-left: 0px;
-  }
-}
 
 .header-area .main-nav .nav li a {
   display: block;
   font-weight: 500;
-  font-size: 13px;
-  color: #7a7a7a;
+  font-size: 14px;
+  /* color: #7a7a7a; */
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -507,7 +478,8 @@ header
 
 .header-area .main-nav .nav li.submenu ul {
   position: absolute;
-  width: 200px;
+  width: 250px;
+  margin-left: -20px;
   box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
   overflow: hidden;
   top: 40px;
@@ -707,14 +679,14 @@ header
   .header-area {
     background-color: #f7f7f7;
     padding: 0px 15px;
-    height: 80px;
+    /* height: 100px; */
     box-shadow: none;
     text-align: center;
   }
 
   .sticky-logo{
-    position: fixed !important;
-    top: -10px !important; 
+    /* position: fixed !important; */
+    /* top: -30px !important;  */
   }
   
   .header-area .container {
@@ -737,7 +709,7 @@ header
     -moz-transition: all 0s ease 0s;
     -o-transition: all 0s ease 0s;
     transition: all 0s ease 0s;
-    margin-left: 0px;
+    
   }
   .header-area .main-nav .nav li:first-child {
     border-top: 1px solid #eee;
@@ -751,6 +723,7 @@ header
     border-bottom: 1px solid #eee;
     padding-left: 0px !important;
     padding-right: 0px !important;
+    margin-right: -1rem;
   }
   .header-area .main-nav .nav li a {
     height: 50px !important;
@@ -2317,9 +2290,21 @@ portfolio
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(79,163,94, 0.2), rgba(79,163,94, 0.1)), url("../images/home-cta.jpg") fixed center center;
+  background: url("../images/home-cta.jpg") fixed center center;
+  opacity: 0.9;
   background-size: cover;
   padding: 120px 0;
+}
+
+.banner {
+  background: url("../images/banner-1.jpg") fixed center center;
+  opacity: 0.9;
+  background-size: cover;
+  padding: 120px 0;
+}
+
+.banner {
+  padding: 200px 0;
 }
 
 .cta-quote {
@@ -2337,6 +2322,19 @@ portfolio
   font-size: 20px;
 }
 
+.banner .banner-btn {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  
+}
+
 .cta .cta-btn {
   font-family: "Jost", sans-serif;
   font-weight: 500;
@@ -2347,8 +2345,29 @@ portfolio
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
-  border: 3px solid white;
   color: white;
+  border: 3px solid white;
+}
+
+.banner .more {
+  color: white;
+  border: 3px solid white;
+}
+
+.banner .contact{
+  color:white;
+  background: rgba(79,163,94);
+}
+
+.banner .more:hover {
+  background: rgba(79,163,94);
+  border: 3px solid rgba(79,163,94);
+}
+
+.banner .contact:hover {
+  background: white;
+  border: 3px solid white;
+  color: rgba(79,163,94);
 }
 
 .cta .cta-btn:hover {
