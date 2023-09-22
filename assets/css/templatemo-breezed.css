@@ -714,8 +714,9 @@ header
 
   .sticky-logo{
     position: fixed !important;
-    top: -30px !important; 
+    top: -10px !important; 
   }
+  
   .header-area .container {
     padding: 0px;
   }
@@ -2316,7 +2317,7 @@ portfolio
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(79,163,94, 0.2), rgba(79,163,94, 0.1)), url("/assets/images/home-cta.JPG") fixed center center;
+  background: linear-gradient(rgba(79,163,94, 0.2), rgba(79,163,94, 0.1)), url("../images/home-cta.jpg") fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
