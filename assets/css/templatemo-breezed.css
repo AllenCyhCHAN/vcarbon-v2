@@ -562,7 +562,7 @@ header
 .background-header .main-nav .menu-trigger span,
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #ffffff;
+  background-color: black;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -654,7 +654,7 @@ header
   color: #5fb759;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .header-area .main-nav .nav li {
     padding-left: 12px;
     padding-right: 12px;
@@ -684,10 +684,6 @@ header
     text-align: center;
   }
 
-  .sticky-logo{
-    /* position: fixed !important; */
-    /* top: -30px !important;  */
-  }
   
   .header-area .container {
     padding: 0px;
@@ -711,9 +707,9 @@ header
     transition: all 0s ease 0s;
     
   }
-  .header-area .main-nav .nav li:first-child {
+  /* .header-area .main-nav .nav li:first-child {
     border-top: 1px solid #eee;
-  }
+  } */
   .header-area.header-sticky .nav {
     margin-top: 80px !important;
   }
@@ -760,7 +756,7 @@ header
     height: auto !important;
   }
   .header-area .main-nav .nav li.submenu:after {
-    color: #3B566E;
+    color: white
     right: 25px;
     font-size: 14px;
     top: 15px;
@@ -1674,6 +1670,10 @@ portfolio
 
 
 @media (max-width: 992px) {
+  /* .sticky-logo {
+    top: -5px; 
+  } */
+
   #projects .filters ul li {
     display: inline-block;
     margin-right: 10px;
@@ -2293,7 +2293,7 @@ portfolio
   background: url("../images/home-cta.jpg") fixed center center;
   opacity: 0.9;
   background-size: cover;
-  padding: 120px 0;
+  padding: 160px 0;
 }
 
 .banner {
