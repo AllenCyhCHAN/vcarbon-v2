@@ -357,7 +357,7 @@ header
 
 .background-header {
   background-color: #fff;
-  height: 80px!important;
+  /* height: 80px!important; */
   position: fixed!important;
   top: 0px;
   left: 0px;
@@ -374,7 +374,11 @@ header
   color: #5fb759!important;
 }
 
-.background-header .nav li a.active {
+.nav-active{
+  background-color: white; 
+  padding: 0px 10px 10px 10px;
+  opacity: 0.8; 
+  border-radius: 5px;
   color: #5fb759!important;
 }
 
@@ -665,6 +669,20 @@ header
 }
 
 @media (max-width: 767px) {
+
+  .header-area .main-nav .nav li.submenu ul {
+    margin-left: 0px;
+  }
+
+  .non-mobile-slogan{
+    display: none;
+  }
+
+  .mobile-slogan{
+    display:block !important;
+  }
+
+  
   .header-area .main-nav .logo {
     color: #1e1e1e;
   }
@@ -756,7 +774,7 @@ header
     height: auto !important;
   }
   .header-area .main-nav .nav li.submenu:after {
-    color: white
+    color: white;
     right: 25px;
     font-size: 14px;
     top: 15px;
@@ -2293,26 +2311,31 @@ portfolio
   background: url("../images/home-cta.jpg") fixed center center;
   opacity: 0.9;
   background-size: cover;
-  padding: 160px 0;
+  padding: 220px 0;
 }
 
 .banner {
   background: url("../images/banner-1.jpg") fixed center center;
   opacity: 0.9;
   background-size: cover;
-  padding: 120px 0;
+  padding: 160px 0;
 }
 
-.banner {
-  padding: 200px 0;
+.contact-banner{
+  background: url("../images/contactus_banner.JPG") fixed center center;
+  opacity: 0.9;
+  background-size: cover;
+  padding: 120px 0;
 }
 
 .cta-quote {
   color: #fff;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
+  margin-top: -180px;
+  text-shadow: 2px 2px 2px black;
   /* background-color: #18de4d; */
-  margin: 10px;
+  /* margin: 10px; */
   /* padding: 20px; */
   border-radius: 1rem;
 }
@@ -2332,7 +2355,6 @@ portfolio
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
-  
 }
 
 .cta .cta-btn {
@@ -2344,7 +2366,7 @@ portfolio
   padding: 12px 40px;
   border-radius: 50px;
   transition: 0.5s;
-  margin: 10px;
+  /* margin-bottom: -200px; */
   color: white;
   border: 3px solid white;
 }
