@@ -691,15 +691,17 @@ header
     color: #5fb759!important;
     opacity: 1;
   }
-  .header-area.header-sticky .nav li.search-icon a {
-    width: 100%;
-  }
+
   .header-area {
     background-color: #f7f7f7;
     padding: 0px 15px;
-    /* height: 100px; */
+    height: 60px;
     box-shadow: none;
     text-align: center;
+  }
+
+  .sticky-logo{
+    top: 4px !important;
   }
 
   
