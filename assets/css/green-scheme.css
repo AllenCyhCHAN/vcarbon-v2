@@ -504,7 +504,7 @@ input.mainBtn {
 }
 
 #aboutus {
-  background-image: url("../images/view/Vabari\ Timber\ Survey\ 363.JPG");
+  background-image: url("/assets/images/about-us-home.jpg");
 }
 .parallax {
   background-attachment: fixed;
