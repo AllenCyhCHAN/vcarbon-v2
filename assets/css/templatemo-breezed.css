@@ -2692,3 +2692,19 @@ h2 {
 @media only screen and (max-width: 480px) {
   header { height: 50vh; }
 }
+
+.mobile-news{
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .non-mobile-news{
+    display: none;
+  }
+
+  .mobile-news{
+    display: block;
+  }
+}
+
+
