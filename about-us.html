@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" type="image/x-icon" href="./assets/./assets/images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
     <title>V Carbon ESG Limited</title>
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-
+  
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 
     <link rel="stylesheet" href="assets/css/templatemo-breezed.css">
@@ -21,476 +21,888 @@
     <link rel="stylesheet" href="assets/css/owl-carousel.css">
 
     <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-    <link rel="stylesheet" href="bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="./assets/css/misc.css">
-    <!-- <link rel="stylesheet" href="./assets/css/green-scheme.css"> -->
-    
-    <!-- JavaScripts -->
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <style>
+      .summary {
+  animation: backInDown 1s ease;
+}
+
+@keyframes backInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0) scale(2);
+  }
+  80% {
+    transform: translate3d(0, 10%, 0) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+.fade-in-logo {
+  animation: animate__fadeInDownBig 1s ease;
+}
+
+@keyframes animate__fadeInDownBig {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0) scale(2);
+  }
+  80% {
+    transform: translate3d(0, 10%, 0) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+.slider {
+  margin: auto;
+  width: 800px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+  animation: slide 200s infinite linear; /* Adjust the duration and easing as needed */
+  width: 400%; /* Adjust the width based on the number of items you want to display */
+}
+
+.slider-items {
+  display: flex;
+  width: 25%; /* Adjust the width based on the number of items you want to display */
+}
+
+.slider-items img {
+  max-width: 20%;
+  margin: 0 2rem;
+  max-height: auto;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-25% * 17)); /* Adjust the percentage based on the number of items you want to display */
+  }
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 33.33333%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+    </style>
 
     </head>
     
     <body>
     
     <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div class="jumper">
             <div></div>
             <div></div>
             <div></div>
         </div>
-    </div>  
+    </div>   -->
     <!-- ***** Preloader End ***** -->
 
-    <img class="sticky-logo" style="z-index: 10000; position: fixed!important; top: 24px; left: 2%; right: 0px; " src="./assets/images/vcarbon-header-logo (1).png" alt="">
+    <a href="index.html"><img class="sticky-logo" style="z-index: 10000; position: fixed!important; top: 24px; left: 2%; right: 0px; " src="./assets/images/vcarbon-header-logo (1).png" alt=""></a>
     <div style="height: 50px; background-color:white; position: fixed!important; top: 0px; left: 0px; right: 0px; z-index: 1000;"></div>
     
     <!-- ***** Header Area Start ***** -->
     <header class="header-area header-sticky" style="background: #4FA35E;">
-        <div class="container" >
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav" >
-                        <!-- ***** Logo Start ***** -->
-                        <a style="margin-left: 100px" href="index.html" class="logo">
-                            <!-- V Carbon -->
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li class="scroll-to-section"><a href="#projects">About PNG</a></li>
-                            <li class="submenu">
-                                <a href="javascript:;">About Us</a>
-                                <ul>
-                                    <li><a href="">Who we are</a></li>
-                                    <li><a href="">What we stand for</a></li>
-                                    <li><a href="">What's our history</a></li>
-                                    <li><a href="">Who's our team</a></li>
-                                    <li><a href="">What we do</a></li>
-                                    <li><a href="">Why V Carbon ESG Limited</a></li>
-                                </ul>
-                            </li>
-                            <li class="submenu">
-                                <a href="javascript:;">Projects</a>
-                                <ul>
-                                    <li><a href="">New Agricultural Development</a></li>
-                                    <li><a href="">Infrastructure Development</a></li>
-                                    <li><a href="">Forestry Preservation</a></li>
-                                    <li><a href="">Renewable Energy</a></li>
-                                    <li><a href="">Sustainable City & Community</a></li>
-                                </ul>
-                            </li>
-                            <li class="submenu">
-                                <a href="javascript:;">News</a>
-                                <ul>
-                                    <li><a href="">Global Climate Change</a></li>
-                                    <li><a href="">PNG Climate Change & Green Development</a></li>
-                                    <li><a href="">V Carbon</a></li>
-                                </ul>
-                            </li>
-                            <li class="scroll-to-section"><a href="#contact-us">Contact Us</a></li> 
-                        </ul>        
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+      <div class="container" >
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav" >
+                      <!-- ***** Logo Start ***** -->
+                      <a style="margin-left: 100px" href="index.html" class="logo">
+                          <!-- V Carbon -->
+                      </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                        <li class="submenu">
+                          <a href="about-png.html">About PNG</a>
+                          <ul>
+                              <li><a href="about-png.html#country">The Country</a></li>
+                              <li><a href="about-png.html#forest">The Forest</a></li>
+                              <li><a href="about-png.html#people">The People</a></li>
+                          </ul>
+                      </li>
+                          <li class="submenu">
+                              <a href="about-us.html">About Us</a>
+                              <ul>
+                                  <li><a href="about-us.html#who-we-are">Who we are</a></li>
+                                  <li><a href="about-us.html#what-we-stand-for">What we stand for</a></li>
+                                  <li><a href="about-us.html#whats-our-history">What's our history</a></li>
+                                  <li><a href="about-us.html#whos-our-team">Who's our team</a></li>
+                                  <li><a href="about-us.html#what-we-do">What we do</a></li>
+                                  <li><a href="about-us.html#why-vcarbon-esg-ltd">Why V Carbon ESG Limited</a></li>
+                              </ul>
+                          </li>
+                          <!-- <li class="submenu">
+                            <a href="">Projects</a>
+                            <ul>
+                                <li><a href="projects-cocoa-coffee-bamboo.html">Cocoa / Coffee beans / bamboo planting
+                                </a></li>
+                                <li><a href="projects-REDD+.html">Carbon Credit Projects (REDD+)</a></li>
+              
+                            </ul>
+                        </li> -->
+                        <li class="submenu">
+                          <p style="display: block;
+                              color: #fff;
+                          font-weight: 500;
+                          font-size: 14px;
+                          /* color: #7a7a7a; */
+                          text-transform: uppercase;
+                          -webkit-transition: all 0.3s ease 0s;
+                          -moz-transition: all 0.3s ease 0s;
+                          -o-transition: all 0.3s ease 0s;
+                          transition: all 0.3s ease 0s;
+                          height: 40px;
+                          line-height: 40px;
+                          border: transparent;
+                          letter-spacing: 1px;" href="">Projects</p>
+                          <ul>
+                              <li><a href="projects-cocoa-coffee-bamboo.html">Cocoa / Coffee beans / bamboo planting
+                              </a></li>
+                              <li><a href="projects-REDD+.html">Carbon Credit Projects (REDD+)</a></li>
+            
+                          </ul>
+                      </li>
+                          <li class="scroll-to-section">
+                              <a href="news.html">News</a>
+                          </li>
+                          <li class="scroll-to-section"><a href="#contact-us" class="nav-contact-us">Contact Us</a></li> 
+                      </ul>        
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
     <!-- ***** Header Area End ***** -->
 
-    <section id="about-us" class="cta banner" style="margin-top: 150px;">
-      <div class="container" data-aos="zoom-in">
-  
-        <div class="row">
-          <div class="col-lg-12 text-center text-lg-start">
-            <br>
-            <div >
-              <h1 style="font-weight: 700; text-shadow: 2px 2px 2px black;" class="text-white">About Us</h1>
-              <h3 class="text-white">A team of passionate professionals, rooted from the community for the community </h3>
-           </div>
-           <br>
-          </div>
-        </div>
-  
-      </div>
-    </section><!-- End Cta Section -->
-  
-  <section style="margin-bottom: 40px;  padding-bottom: 100px; padding-top: 40px;">
-    <div class="container">	
-      <div class="row project-single">
-        <div class="col-md-6">
-          <div class="project-img">
-            <img src="./assets/images/Vabari Timber Survey 401.JPG" style="width:100%; display: block; margin-left: auto; margin-right: auto;" alt="Project Image 1">
-          </div> <!-- /.project-img -->
-        </div> <!-- /.col-md-8 -->
-        <div class="col-md-6">
-          <div class="project-info">
-            <h3 style="font-weight: 800; margin-top: 0px;">Who we are? </h3>
-            <!-- <h3 class="project-title">Project Image Post Format</h3> -->
-            <h5 class="description" style="line-height: 40px; margin-top: 10px; margin-bottom: 10px;">The company, V CARBON, is set up for finding strategies and solutions to conserve the ultimate Green resources on Earth- forests and green lands. </h5>
-            <h5 class="description" style="line-height: 40px; margin-bottom: 10px;">Our primary focus is the preservation of the current Green landscape in Papua New Guinea and to find strategies to enhance and merge the Green resources into the world with an ESG-focused objective. </h5>
-            <h5 class="description" style="line-height: 40px; margin-bottom: 10px;">Our company strive to cater for the culture of Papua New Guinea business development and, to maintain a close partnership relationship with the landlords and locals.</h5>
-          </div> <!-- /.project-info -->
-        </div> <!-- /.col-md-4 -->
-      </div> <!-- /.row -->
-    </div> <!-- /.container -->	
-  </section>
-
-  <section style="padding-bottom: 80px; padding-top: 40px; background-color: rgb(216, 216, 216, 0.3);" >
-    <div class="container" >	
-      <div class="row project-single">
-        <div class="col-md-6">
-          <div class="project-info">
-            <h3 style="font-weight: 800; margin-top: 0px;">Our Mission</h3>
-            <!-- <h3 class="project-title">Project Image Post Format</h3> -->
-            <h4 style="line-height: 40px;">
-              The mission of V carbon consists of 3 phases: </h4>
-              <h4 style="font-size: 16px;">(1) to abide the Paris Agreement 's long-term objective of global temperature rise to 1.5 degree Celsius above pre-industrial levels in order to reduce the effects of extreme climate change affecting the Earth</h4>
-              <h4 style="font-size: 16px;">(2) adopt strategies and find solutions to reduce GHG emissions</h4>
-              <h4 style="font-size: 16px;">(3) to preserve and conserve the bio-diversity and natural resources of the Earth, in particular, rain forests</h4>
-          </div> <!-- /.project-info -->
-        </div> <!-- /.col-md-4 -->
-        <div class="col-md-6">
-          <div class="project-img">
-            <img src="./assets/images/view/DSC03259.JPG" style="width:100%; display: block; margin-left: auto; margin-right: auto;" alt="Project Image 1">
-          </div> <!-- /.project-img -->
-        </div> <!-- /.col-md-8 -->
-      </div> <!-- /.row -->
-    </div> <!-- /.container -->	
-  </section>
-
-
-
-  <section>
-          <!-- Team #6 Start -->
-          <div class="ourteam" style="margin-top: 80px;">
-            <div class="container" style="padding-top: 40px;">
-              <div class="section-title">
-                <h1 style="margin-bottom: 40px; font-size: xx-large; font-weight: 900;">Meet Our Team</h1>
-                  <h3>Executive Team - Hong Kong</h3>
-              </div>
-              <div class="row">
-                <div class="column">
-                    <div class="team-6">
-                        <div class="team-img">
-                            <img src="./assets/images/manly_liu.png" alt="Team Image">
-                        </div>
-                        <div class="team-content">
-                            <h2>Mr. Manly LIU, CAIA, FRM</h2>
-                            <h3>Chief Executive Officer</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="team-6">
-                        <div class="team-img">
-                            <img src="./assets/images/kiri_luk.png" alt="Team Image">
-                        </div>
-                        <div class="team-content">
-                            <h2>Ms. Kiri LUK, CPA</h2>
-                            <h3>Financial Advisor</h3>
-                           
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="team-6">
-                        <div class="team-img">
-                            <img src="./assets/images/eugene_chau.png" alt="Team Image">
-                        </div>
-                        <div class="team-content">
-                            <h2>Hauman Yeung</h2>
-                            <h3>Environment & Sustainability Advisor</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="column">
-                        <div class="team-6">
-                            <div class="team-img">
-                                <img src="/./assets/images/tony_chiu.jpeg" alt="Team Image">
-                            </div>
-                            <div class="team-content">
-                                <h2>Tony Chiu</h2>
-                                <h3>Social & Governance Advisor</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="team-6">
-                            <div class="team-img">
-                                <img src="./assets/images/tracey_wei.jpeg" alt="Team Image">
-                            </div>
-                            <div class="team-content">
-                                <h2>Tracey Wei</h2>
-                                <h3>Investor Relations Officer</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                      <div class="team-6">
-                          <div class="team-img">
-                              <img src="/./assets/images/Andrew_wright.png" alt="Team Image">
-                          </div>
-                          <div class="team-content">
-                              <h2>Andrew Wright</h2>
-                              <h3>Media Relations Officer</h3>
-                          </div>
-                      </div>
-                </div>
-                </div>
-          </div> 
-          <div class="container" style="padding-top: 40px;">
-            <div class="section-title">
-                <h3>Executive Team - PNG</h3>
-            </div>
+        <!-- ***** Main Banner Area Start ***** -->
+        <section id="cta" class="about-us" style="margin-top: 80px;">
+          <div class="container" data-aos="zoom-in">
+      
             <div class="row">
+              <div class="col-lg-12 text-center text-lg-start">
+                <div >
+                  <h1 style="font-weight: 700; text-shadow: 2px 2px 2px black;" class="text-white">About Us</h1>
+               </div>
+                <!-- <p> V Carbon’s primary focus is the preservation of the current green landscape in PNG.</p> -->
+              </div>
+              <!-- <div class="col-lg-3 cta-btn-container text-center">
+              </div> -->
+            </div> 
+      
+          </div>
+        </section><!-- End Cta Section -->
+
+        <section class="summary" >
+          <div class="container" style="margin-top: 60px">
+            <div class="row" style="text-align: center; margin: auto">
+              <div style="margin: auto;">
+                <h2 style="font-weight: 700;">Who We Are</h2>
+                <h3 style="font-weight: 500;">A team of passionate professionals, rooted from the community for the community </h3>
+              </div>
+              <p>V Carbon ESG Group (“V Carbon”) is a solution provider for the development of Environmental Protection, Social Responsibility, and Sustainability in PNG.  We chartered 4 different REDD+ projects, under 4 subsidiaries targeting to register with VERRA in late 2023 Total projects account for with approximately 1.1 million hectares with and an estimated 150 million units of carbon credits over the coming 30 years. These projects could easily be one of the largest projects of its kind in the Asia-Pacific region.</p>
+            </div>
+          </div>
+        </section>
+    
+    
+        <!-- Features Section - Home Page -->
+        <section id="features" class="features">
+    
+          <div class="container">
+    
+            <div class="row gy-4 align-items-center features-item fade-in-section">
+              <div class="col-lg-4 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                <!-- <h3 class="about-png-title">The country: Biggest with richest biodiversity forest in Asia Pacific </h3> -->
+                <p>
+                  The preservation of these forests is essential not only to the biodiversity but also to the well-being and prosperity of the local community people.  This allows the landowners, from one of the least developed rural areas, to actively participate in socio-economic development activities on their motherland, including such as creating employment to to generate income and improve rural quality of life living standards, providing new agricultural technology skills, and training opportunities enhancing subsistence farming or larger scale and commercial farming, and many more.  V Carbon is has already been working closely with the PNG Government to apply the forestry projects as for the application of the United Nations REDD+ program.
+                </p><!-- <a href="#" class="btn btn-get-started">Get Started</a> -->
+              </div>
+              <div class="col-lg-8 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+                  <img src="./assets/images/about-png-who-we-are.jpg" alt="" style="width: 90%; height: auto; margin: auto;">
+                  <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16244644.69871861!2d139.72033966786813!3d-6.266661709770312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6859e8afbf0e9eaf%3A0xdaf0e50d8e9c127a!2sPapua%20New%20Guinea!5e0!3m2!1sen!2shk!4v1696798899370!5m2!1sen!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                
+                  <!-- <img src="./assets/images/home-about-png-2.jpg" alt="" class="stack-back" style="width: 80%; height: auto; margin: auto;"> -->
+              </div>
+            </div><!-- Features Item -->
+
+            <div class="row gy-4 align-items-center features-item fade-in-section">
+              <div class="col-lg-7 order-2 order-lg-2" >
+                <h3 class="about-png-title">What we stand for: “Together, we are greener”.   </h3>
+                <p>
+                  Our mission is to conserve the ultimate green resources in PNG and to find strategies to enhance and merge the green resources into the world with an ESG-focused objective. We aim to transform PNG into a truly sustainable and self-financing green community, behind our professionals, dedications, and relationships we have had built and are going to develop. 
+                </p>
+                <p> In the initial stage of our social development projects, we aim to cover 6 of the United Nations Sustainable Development Goals (“UNSDG”), namely No Poverty, Decent Work and Economic Growth, Sustainable Cities and Communities, Industry Innovation and Infrastructure, Climate Action and Life on Land.  Then in the subsequent stages, we will be tackling the other UNSDGs including Gender Equality, Reduced Inequalities, Good Health and Well Being, Quality Education, Clean Water and Sanitation, and Affordable and Clean Energy.</p>
+              </div>
+              <div class="col-lg-5 order-1 order-lg-1 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+                <!-- <div class="d-flex align-items-center features-img-bg" data-aos="zoom-out"> -->
+                  <img src="./assets/images/about-us-what-we-stand-for.png" class="img-fluid fade-in-logo"  alt="">
+                <!-- </div> -->
+                <!-- <div class="image-stack">
+                 <img src="./assets/images/home-about-png-4.jpg" alt="" class="stack-back">
+                </div> -->
+              </div>
+            </div><!-- Features Item -->
+
+            <div class="row gy-4 align-items-center features-item">
+              <div class="slider">
+                <div class="slider-wrapper">
+                  <div class="slider-items">
+                    <img src="./assets/images/SDG_icons-slider/E-WEB-Goal-01.png" alt="Icon 1">
+                    <img src="./assets/images/SDG_icons-slider/E-WEB-Goal-02.png" alt="Icon 1">
+                    <img src="./assets/images/SDG_icons-slider/E-WEB-Goal-03.png" alt="Icon 1">
+                    <img src="./assets/images/SDG_icons-slider/E-WEB-Goal-04.png" alt="Icon 1">
+                    <img src="./assets/images/SDG_icons-slider/E-WEB-Goal-05.png" alt="Icon 1">
+                    <img src="./assets/images/SDG_icons-slider/E-WEB-Goal-06.png" alt="Icon 1">
+                    <img src="./assets/images/SDG_icons-slider/E-WEB-Goal-07.png" alt="Icon 1">
+                    <img src="./assets/images/SDG_icons-slider/E-WEB-Goal-08.png" alt="Icon 1">
+                    <img src="./assets/images/SDG_icons-slider/E-WEB-Goal-09.png" alt="Icon 1">
+                    <img src="./assets/images/SDG_icons-slider/E-WEB-Goal-10.png" alt="Icon 1">
+                    <img src="./assets/images/SDG_icons-slider/E-WEB-Goal-11.png" alt="Icon 1">
+                    <img src="./assets/images/SDG_icons-slider/E-WEB-Goal-12.png" alt="Icon 1">
+                    <img src="./assets/images/SDG_icons-slider/E-WEB-Goal-13.png" alt="Icon 1">
+                    <img src="./assets/images/SDG_icons-slider/E-WEB-Goal-14.png" alt="Icon 1">
+                    <img src="./assets/images/SDG_icons-slider/E-WEB-Goal-15.png" alt="Icon 1">
+                    <img src="./assets/images/SDG_icons-slider/E-WEB-Goal-16.png" alt="Icon 1">
+                    <img src="./assets/images/SDG_icons-slider/E-WEB-Goal-17.png" alt="Icon 1">
+
               
-                <div class="column">
-                    <div class="team-6">
-                        <div class="team-img">
-                            <img src="./assets/images/eugene_chau.jpg" alt="Team Image">
-                        </div>
-                        <div class="team-content">
-                            <h2>Eugene Chau</h2>
-                            <h3>Managing Director, PNG Operations</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="column" >
-                    <div class="team-6">
-                        <div class="team-img">
-                            <img src="./assets/images/anthony_chan.jpg" alt="Team Image">
-                        </div>
-                        <div class="team-content">
-                            <h2>Anthony Chan</h2>
-                            <h3>Manager, PNG Operations</h3>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <div class="row">
-                    <div class="column">
-                        <div class="team-6">
-                            <div class="team-img">
-                                <img src="./assets/images/lolita_meauri.jpeg" alt="Team Image">
-                            </div>
-                            <div class="team-content">
-                                <h2>Lolita Meauri</h2>
-                                <h3>Accounting, PNG Operations</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="team-6">
-                            <div class="team-img">
-                                <img src="./assets/images/vele_lohia.jpeg" alt="Team Image">
-                            </div>
-                            <div class="team-content">
-                                <h2>Vele Lohia</h2>
-                                <h3>Community Relations</h3> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                      <div class="team-6">
-                          <div class="team-img">
-                              <img src="./assets/images/john_sibi.jpeg" alt="Team Image">
-                          </div>
-                          <div class="team-content">
-                              <h2>John Sibi</h2>
-                              <h3>Government Liasion</h3>
-                          </div>
-                      </div>
+                    <!-- Add more <img> tags for remaining icons -->
                   </div>
                 </div>
-        </div>
+              </div>
             </div> 
-        </div> 
-          </div>
-        <!-- Team #6 End -->
 
-  </section>
+            <div class="row gy-4 align-items-center features-item">
+              <div class="col-lg-12 order-1 order-lg-1" data-aos="fade-up">
+                <h3 class="about-png-title">What’s our history: A transformation story, rooted from the care of the community</h3>
+                <p>
+                  Our history goes way back to early 2000’s, when only a few companies were exploring the commercial logging business opportunities in PNG.  
 
-
-  <footer>
-    <!-- Footer -->
-    <footer class="text-center text-lg-start text-white" >
-      <!-- Grid container -->
-      <div class="container p-3 pb-0">
-        <!-- Section: Links -->
-        <section class="">
-          <!--Grid row-->
-          <div class="row">
-            <!--Grid column-->
-            <!-- <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">FOOTER CONTENT</h5>
-  
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestiae modi cum ipsam ad, illo possimus laborum ut
-                reiciendis obcaecati. Ducimus, quas. Corrupti, pariatur eaque?
-                Reiciendis assumenda iusto sapiente inventore animi?
-              </p>
-            </div> -->
-            <!--Grid column-->
-  
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <a class="footer-nav-item text-uppercase" href="">About PNG</a>
-            </div>
-            <!--Grid column-->
-  
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <a class="footer-nav-item text-uppercase" href="">About Us</a>
-            </div>
-            <!--Grid column-->
-  
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <a class="footer-nav-item text-uppercase" href="">Projects</a>
-            </div>
-            <!--Grid column-->
-  
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <a class="footer-nav-item text-uppercase" href="">News</a>
-            </div>
-            <!--Grid column-->
-          </div>
-          <!--Grid row-->
-        </section>
-        <!-- Section: Links -->
-  
-        <hr class="mb-4" />
-  
-        <!-- Section: CTA -->
-        <section class="">
-          <div class="contact-wrapper">
-            <h4>Get In Touch With Us</h4>
-            <p style="line-height: 2rem; color:white">Interested in joining force with us?  Our team is always here to help. If you have any questions about our project, you can reach us anytime via <strong>Email: enquiry@vcarbonpng.com</strong>.</p>
-          </div> <!-- /.col-md-12 -->
-        </section>
-
-  
-        <hr class="mb-4" />
-  
-        <!-- Section: Social media -->
-        <section class="mb-4 text-center">
-          <!-- Facebook -->
-          <a
-             class="btn btn-outline-light btn-floating m-1"
-             href="#!"
-             role="button"
-             ><i class="fa fa-facebook"></i
-            ></a>
-  
-          <!-- Twitter -->
-          <a
-             class="btn btn-outline-light btn-floating m-1"
-             href="#!"
-             role="button"
-             ><i class="fa fa-twitter"></i
-            ></a>
-  
-          <!-- Google -->
-          <a
-             class="btn btn-outline-light btn-floating m-1"
-             href="#!"
-             role="button"
-             ><i class="fa fa-google"></i
-            ></a>
-  
-          <!-- Instagram -->
-          <a
-             class="btn btn-outline-light btn-floating m-1"
-             href="#!"
-             role="button"
-             ><i class="fa fa-instagram"></i
-            ></a>
-  
-          <!-- Linkedin -->
-          <a
-             class="btn btn-outline-light btn-floating m-1"
-             href="#!"
-             role="button"
-             ><i class="fa fa-linkedin"></i
-            ></a>
-  
-        </section>
-        <!-- Section: Social media -->
-      </div>
-      <!-- Grid container -->
-  
-      <!-- Copyright -->
-      <div
-           class="text-center p-3"
-           style="background-color: rgba(0, 0, 0, 0.2)"
-           >
-        © 2023 V Carbon ESG Limited:
-        <a class="text-white" href="https://mdbootstrap.com/"
-           ></a
-          >
-      </div>
-      <div style="text-align: right; margin-right: 40px; margin-top: 20px">
-        <a class="text-white" style="margin-right: 15px;" href="">Privacy Policy</a>
-        <a class="text-white" href="">Cookie Statement</a>
-      </div>
-    </footer>
-    <!-- Footer -->
+                </p>
+                <p>
+                  V Carbon identified business opportunities in PNG since 2006, subsequently took over the land use rights from these logging companies and converted the land use rights into forest preservation.
+                  </p>
+                  <p>
+                    V Carbon, with its professional parties, launched an awareness trip in PNG in August 2023 to lay the foundations for the many projects that are in the pipeline.  We also had the opportunity to speak with the local government representatives, landowner representatives, and Incorporated Land Group (“ILG”) representatives to gain their trust and support.
+                    </p>
+              </div>
+              
+              <div class="col-lg-12 order-2 order-lg-2 d-flex" style="margin-top: 2rem;">
+<div class="responsive">
+  <div class="gallery">
+      <img src="./assets/images/about-us-history-1.jpg" alt="Cinque Terre">
   </div>
-</footer>
+</div>
 
-<!-- <div id="preloader"></div> -->
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<div class="responsive">
+  <div class="gallery">
+      <img src="./assets/images/about-us-history-2.jpg" alt="Forest">
+  </div>
+</div>
 
+<div class="responsive">
+  <div class="gallery">
+      <img src="./assets/images/about-us-history-3.jpg" alt="Northern Lights">
+    
+  </div>
+</div>
+<!-- 
+<div class="responsive">
+  <div class="gallery">
+      <img src="./assets/images/about-us-history-4.jpg" alt="Mountains">
+  </div>
+</div> -->
+    
+          </div>
+          </div>
+          </div>
+        </section>
 
-
-
-
-<!-- jQuery -->
-<script src="assets/js/jquery-2.1.0.min.js"></script>
-
-<!-- Bootstrap -->
-<script src="assets/js/popper.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-
-<!-- Plugins -->
-<script src="assets/js/owl-carousel.js"></script>
-<script src="assets/js/scrollreveal.min.js"></script>
-<script src="assets/js/waypoints.min.js"></script>
-<script src="assets/js/jquery.counterup.min.js"></script>
-<script src="assets/js/imgfix.min.js"></script> 
-<script src="assets/js/slick.js"></script> 
-<script src="assets/js/lightbox.js"></script> 
-<script src="assets/js/isotope.js"></script> 
-
-<!-- Global Init -->
-<script src="assets/js/custom.js"></script>
-
-<script>
-
-    $(function() {
-        var selectedClass = "";
-        $("p").click(function(){
-        selectedClass = $(this).attr("data-rel");
-        $("#portfolio").fadeTo(50, 0.1);
-            $("#portfolio div").not("."+selectedClass).fadeOut();
-        setTimeout(function() {
-          $("."+selectedClass).fadeIn();
-          $("#portfolio").fadeTo(50, 1);
-        }, 500);
+        <section id="team" style="margin: 40px 100px;">
+          <div class="container">
+            <div class="section-title">
+              <h2>Meet Our Team</h2>
+            </div>
+            <div class="row">
+      
+              <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                    <img src="./assets/images/manly-pic-cut.png" alt="">
+                    <div class="team-content">
+                        <!-- <h3 class="post-title">Mr. Manly LIU, CAIA, FRM</h3>
+                        <span class="post">CEO</span> -->
+                        <p class="description">
+                          Mr. LIU is a finance professional with more than 20 years of experience in global fixed-income, equities, currency related capital markets products and the development of quantitative trading strategies in the capacity of a hedge fund manager as well as a private wealth investment advisor.  With the vision of creating a Smart Forest, Mr. LIU has started building business connections in PNG over the past 10 years.
+                            </p>
+                        <!-- <ul class="team_social">
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        </ul> -->
+                    </div>
+                    <div class="team-prof">
+                      <h3 class="post-title">Mr. Manly LIU, CAIA, FRM</h3>
+                      <span class="post">CEO</span>
+                    </div>
+                </div>
+            </div>
+      
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <img src="./assets/images/kiri-pic-cut.png" alt="">
+                        <div class="team-content">
+                            <!-- <h3 class="post-title">Ms. Kiri LUK, CPA</h3>
+                            <span class="post">COO</span> -->
+                            <p class="description">
+                              Ms. LUK is an accounting professional with more than 36 years of industry experience.  Ms. LUK has been leading V Carbon ESG Group’s projects in PNG over the past 13 years and is very knowledgeable in the regulation, policies, local technicalities and 3rd party regulatory requirements.
+                             </p>
+                            <!-- <ul class="team_social">
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                            </ul> -->
+                        </div>
+                        <div class="team-prof">
+                          <h3 class="post-title">Ms. Kiri LUK, CPA</h3>
+                          <span class="post">COO</span>
+              
+                        </div>
+                    </div>
+                </div>
+      
+              <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                
+                    <img src="./assets/images/eugene-pic-cut.png" alt="">
+                    <div class="team-content">
+                        <!-- <h3 class="post-title">Williamson</h3>
+                        <span class="post">Web Desginer</span> -->
+                        <p class="description">
+                          Mr. CHAU has spent more than 5 years in PNG as a leader in project management and has over 10 years of experience in financial groups.  Mr. CHAU is currently developing ESG projects in PNG to help reduce Green House Gas emissions and to provide practical help to local economic development, employment, education and other aspects to promote poverty eradication and to improve living standards of the local people.
+                        </p>
+                        <!-- <ul class="team_social">
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        </ul> -->
+                    </div>
+                    <div class="team-prof">
+                      <h3 class="post-title">Mr. Eugene CHAU</h3>
+                      <span class="post">Managing Director</span>
+                    </div>
+                </div>
+                
+            </div>
             
-        });
-    });
+  
+          
+          
+            </div>
+            <br>
+            <br>
+            <div class="row">
 
-</script>
+            <div class="col-md-4 col-sm-6">
+              <div class="our-team">
+              
+                  <img src="./assets/images/team-chris.png" alt="">
+                  <div class="team-content">
+                      <!-- <h3 class="post-title">Williamson</h3>
+                      <span class="post">Web Desginer</span> -->
+                      <p class="description">
+                        <!-- Mr. CHAU has spent more than 5 years in PNG as a leader in project management and has over 10 years of experience in financial groups.  Mr. CHAU is currently developing ESG projects in PNG to help reduce Green House Gas emissions and to provide practical help to local economic development, employment, education and other aspects to promote poverty eradication and to improve living standards of the local people. -->
+                      </p>
+                      <!-- <ul class="team_social">
+                          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                          <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                      </ul> -->
+                  </div>
+                  <div class="team-prof">
+                    <h3 class="post-title">Mr. Chris PANG</h3>
+                    <span class="post">General Manager</span>
+                  </div>
+              </div>
 
-</body>
-</html>
+            
+          </div>
+
+          <div class="col-md-4 col-sm-6" >
+            <div class="our-team">
+                <img src="./assets/images/andrew-pic-cut.png" alt="">
+                <div class="team-content">
+                    <!-- <h3 class="post-title">Mr. Manly LIU, CAIA, FRM</h3>
+                    <span class="post">CEO</span> -->
+                  
+                    <!-- <ul class="team_social">
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                    </ul> -->
+                </div>
+                <div class="team-prof">
+                  <h3 class="post-title">Mr. Andrew CHONG</h3>
+                  <span class="post">Project Manager PNG Operations</span>
+                </div>
+            </div>
+        </div>
+  
+            <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                    <img src="./assets/images/Lolita-pic-cut.png" alt="">
+                    <div class="team-content">
+                        <!-- <h3 class="post-title">Ms. Kiri LUK, CPA</h3>
+                        <span class="post">COO</span> -->
+                        <p class="description">
+                         </p>
+                        <!-- <ul class="team_social">
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        </ul> -->
+                    </div>
+                    <div class="team-prof">
+                        <h3 class="post-title">Ms. Lolita MEAURI</h3>
+                        <span class="post">Liaison & Administration Officer</span>
+                    </div>
+                </div>
+            </div>
+  
+          
+          
+            </div>
+            <br>
+            <br>
+            <div class="row" >
+      
+
+              <div class="col-md-4 col-sm-6">
+                <div class="our-team" >
+                
+                    <img src="./assets/images/anna-pic-cut.png" alt="">
+                    <div class="team-content">
+                        <!-- <h3 class="post-title">Williamson</h3>
+                        <span class="post">Web Desginer</span> -->
+                        <!-- <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio exercitationem facilis laborum perferendis quasi, ratione.
+                        </p> -->
+                        <!-- <ul class="team_social">
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        </ul> -->
+                    </div>
+                    <div class="team-prof">
+                      <h3 class="post-title">Ms.	Anna DRINGO</h3>
+                      <span class="post">Administration & Accounts Clerk</span>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-md-4 col-sm-6" >
+              <div class="our-team">
+                  <img src="./assets/images/team-vele-cut.png" alt="">
+                  <div class="team-content">
+                      <!-- <h3 class="post-title">Mr. Manly LIU, CAIA, FRM</h3>
+                      <span class="post">CEO</span> -->
+                    
+                      <!-- <ul class="team_social">
+                          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                          <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                      </ul> -->
+                  </div>
+                  <div class="team-prof">
+                    <h3 class="post-title">Mr. Vele LOHIA</h3>
+                    <span class="post">Project Coordination Officer </span>
+                  </div>
+              </div>
+          </div>
+    
+              <div class="col-md-4 col-sm-6">
+                  <div class="our-team">
+                      <img src="./assets/images/team-john-cut.png" alt="">
+                      <div class="team-content">
+                          <!-- <h3 class="post-title">Ms. Kiri LUK, CPA</h3>
+                          <span class="post">COO</span> -->
+                          <p class="description">
+                           </p>
+                          <!-- <ul class="team_social">
+                              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                              <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                              <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                          </ul> -->
+                      </div>
+                      <div class="team-prof">
+                          <h3 class="post-title">Mr. John SIBI</h3>
+                          <span class="post">Project Coordination Officer</span>
+                      </div>
+                  </div>
+              </div>
+    
+
+ 
+            
+            </div>
+            <br>
+             
+        </div>
+        </section>
+
+
+
+          <section id="features" class="features">
+    
+            <div class="container">
+      
+              <div class="row gy-4 align-items-center features-item fade-in-section">
+
+          <div class="row gy-4 align-items-center features-item">
+            <div class="col-lg-12 order-1 order-lg-1" data-aos="fade-up">
+              <h3 class="about-png-title">What we do: “Teach a man to fish, you feed him for a lifetime”</h3>
+              <p>
+                V Carbon’s primary focus is the preservation of the current green landscape in PNG.
+              </p>
+              <p>
+                Forming strong partnership with the landlords and the locals, V Carbon will be launching a variety of social development projects with the short-term goal of improving the livelihoods of the locals, leveraging on the wealth of natural resources.  The mid to long term goals are to help the locals to become self-sustainable and to connect to the developed economies.  Give a man a fish, you feed him for a day.  Teach a man to fish, you feed him for a lifetime.
+              </p>
+                <p>
+                  With nearly 20 years of operational experience in PNG, V Carbon is the perfect road map for interested project developers and investors and also a trusted partner for the locals. 
+                </p>
+                <p>
+                  V Carbon, together with its professional parties, traveled to PNG during the final week of  in August 2023 for a site visit of the 4 projects; where finished conducting data sampling and village visiting have been done for the 4 project sites for its implementation of REDD+ initiatives and VCM Projects.
+                </p>
+                <h5>* V-Carbon site visit in Nuku in Aug 2023</h5>
+            </div>
+            <div class="col-lg-12 order-2 order-lg-2 d-flex" style="margin-top: 2rem;">
+              
+<div class="responsive">
+<div class="gallery">
+    <img src="./assets/images/what-we-do-1.jpg" alt="Cinque Terre">
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+    <img src="./assets/images/what-we-do-2.jpg" alt="Forest">
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+    <img src="./assets/images/what-we-do-3.jpg" alt="Northern Lights">
+  
+</div>
+</div>
+<!-- 
+<div class="responsive">
+<div class="gallery">
+    <img src="./assets/images/about-us-history-4.jpg" alt="Mountains">
+</div>
+</div> -->
+  
+        </div>
+        </div>
+
+        <div class="row gy-4 align-items-center features-item fade-in-section">
+          <div class="col-lg-6 order-2 order-lg-2" >
+            <h3 class="about-png-title">Why V Carbon ESG Group: Decades of community-based development  </h3>
+            <p>
+              Rome wasn't built in a day. The same applies to our footprints in PNG.
+            </p>
+            <p> 
+              With almost 20 years of on ground experience with the local people and the government, we have acquired unmatched expertise and local network which will help resolve the technicalities as our projects progress.
+              </p>
+              <p>
+                During our latest site visit to PNG in August 2023, the V Carbon team had the opportunity to meet with local government representatives on a number of occasions, where the local government representatives have shown support for our efforts in our implementation of REDD+ initiatives and VCM Projects.
+              </p>
+
+            </div>
+          <div class="col-lg-6 order-1 order-lg-1 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+            <!-- <div class="d-flex align-items-center features-img-bg" data-aos="zoom-out"> -->
+              <img src="./assets/images/why-vcarbon.jpg" class="img-fluid fade-in-logo" style="width: 90%" alt="">
+            <!-- </div> -->
+            <!-- <div class="image-stack">
+             <img src="./assets/images/home-about-png-4.jpg" alt="" class="stack-back">
+            </div> -->
+          </div>
+        </div><!-- Features Item -->
+    
+        </section><!-- End Features Section -->
+
+
+        <footer>
+          <!-- Footer -->
+          <footer class="text-center text-lg-start text-white" >
+            <!-- Grid container -->
+            <div class="container p-3 pb-0">
+              <!-- Section: Links -->
+              <section class="">
+                <!--Grid row-->
+                <div class="row">
+                  <!--Grid column-->
+                  <!-- <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">FOOTER CONTENT</h5>
+        
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Molestiae modi cum ipsam ad, illo possimus laborum ut
+                      reiciendis obcaecati. Ducimus, quas. Corrupti, pariatur eaque?
+                      Reiciendis assumenda iusto sapiente inventore animi?
+                    </p>
+                  </div> -->
+                  <!--Grid column-->
+        
+                  <!--Grid column-->
+                  <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <a class="footer-nav-item text-uppercase" href="index.html">Home</a>
+                  </div>
+  
+                  <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <a class="footer-nav-item text-uppercase text-white" href="about-png.html">About PNG</a>
+                  </div>
+                  <!--Grid column-->
+        
+                  <!--Grid column-->
+                  <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <a class="footer-nav-item text-uppercase" href="about-us.html">About Us</a>
+                  </div>
+                  <!--Grid column-->
+        
+                  
+                </div>
+  
+                <div class="row">
+                                 <!--Grid column-->
+                                 <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                                  <a class="footer-nav-item text-uppercase" href="projects.html">Projects</a>
+                                </div>
+                                <!--Grid column-->
+                      
+                                <!--Grid column-->
+                                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                                  <a class="footer-nav-item text-uppercase" href="news.html">News</a>
+                                </div>
+                
+                                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                                  <a class="footer-nav-item text-uppercase" href="contact.html">Contact Us</a>
+                                </div>
+                                <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </section>
+              <!-- Section: Links -->
+        
+              <hr class="mb-4" />
+        
+              <!-- Section: CTA -->
+              <section class="">
+                <div class="contact-wrapper">
+                  <h4 style="color: white;">Get In Touch With Us</h4>
+                  <p style="line-height: 2rem; color:white">Interested in joining force with us? Our team is always here to help. 
+                    <br /> If you have any questions about our project, you can reach us anytime via <strong>Email: enquiry@vcarbonpng.com</strong>.</p>
+                </div> <!-- /.col-md-12 -->
+              </section>
+  
+        
+              <hr class="mb-4" />
+      
+              <!-- <section class="mb-4 text-center">
+                <a
+                   class="btn btn-outline-light btn-floating m-1"
+                   href="#!"
+                   role="button"
+                   ><i class="fa fa-facebook"></i
+                  ></a>
+        
+                <a
+                   class="btn btn-outline-light btn-floating m-1"
+                   href="#!"
+                   role="button"
+                   ><i class="fa fa-twitter"></i
+                  ></a>
+        
+                <a
+                   class="btn btn-outline-light btn-floating m-1"
+                   href="#!"
+                   role="button"
+                   ><i class="fa fa-google"></i
+                  ></a>
+        
+                <a
+                   class="btn btn-outline-light btn-floating m-1"
+                   href="#!"
+                   role="button"
+                   ><i class="fa fa-instagram"></i
+                  ></a>
+        
+                <a
+                   class="btn btn-outline-light btn-floating m-1"
+                   href="#!"
+                   role="button"
+                   ><i class="fa fa-linkedin"></i
+                  ></a>
+        
+              </section> -->
+            </div>
+            <!-- Grid container -->
+        
+            <!-- Copyright -->
+            <div
+                 class="text-center p-3"
+                 style="background-color: rgba(0, 0, 0, 0.2)"
+                 >
+              © 2023 V Carbon ESG Limited
+            </div>
+            <div style="text-align: right; margin-right: 40px; margin-top: 20px">
+              <a class="text-white" style="margin-right: 15px;" href="privacy-policy.html">Privacy Policy</a>
+              <a class="text-white" href="cookie-statement.html">Cookie Statement</a>
+            </div>
+          </footer>
+          <!-- Footer -->
+        </div>
+  </footer>
+  
+    <!-- <div id="preloader"></div> -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+  
+  
+      
+  
+      <!-- jQuery -->
+      <script src="assets/js/jquery-2.1.0.min.js"></script>
+  
+      <!-- Bootstrap -->
+      <script src="assets/js/popper.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+  
+      <!-- Plugins -->
+      <script src="assets/js/owl-carousel.js"></script>
+      <script src="assets/js/scrollreveal.min.js"></script>
+      <script src="assets/js/waypoints.min.js"></script>
+      <script src="assets/js/jquery.counterup.min.js"></script>
+      <script src="assets/js/imgfix.min.js"></script> 
+      <script src="assets/js/slick.js"></script> 
+      <script src="assets/js/lightbox.js"></script> 
+      <script src="assets/js/isotope.js"></script> 
+      
+      <!-- Global Init -->
+      <script src="assets/js/custom.js"></script>
+  
+      <script>
+  
+          $(function() {
+              var selectedClass = "";
+              $("p").click(function(){
+              selectedClass = $(this).attr("data-rel");
+              $("#portfolio").fadeTo(50, 0.1);
+                  $("#portfolio div").not("."+selectedClass).fadeOut();
+              setTimeout(function() {
+                $("."+selectedClass).fadeIn();
+                $("#portfolio").fadeTo(50, 1);
+              }, 500);
+                  
+              });
+          });
+
+          function debounce(func, delay) {
+  let timer;
+  return function () {
+    clearTimeout(timer);
+    timer = setTimeout(func, delay);
+  };
+}
+
+function checkFadeInSection() {
+  const fadeInSectionElements = document.querySelectorAll('.fade-in-section');
+  fadeInSectionElements.forEach((element) => {
+    const elementTop = element.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    if (elementTop < windowHeight) {
+      element.classList.add('fade-in');
+    }
+  });
+}
+
+window.addEventListener('scroll', debounce(checkFadeInSection, 100));
+  
+      </script>
+  
+    </body>
+  </html>

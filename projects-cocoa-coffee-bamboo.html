@@ -24,6 +24,64 @@
       <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
       <link rel="stylesheet" href="./assets/css/style.css">
   
+      <style>
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #eaeaea;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.read-more{
+  color: white;
+  background: rgba(79, 163, 94);
+  font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 20px;
+    transition: 0.5s;
+    transition: transform 0.3s;
+    margin: 20px 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(79, 163, 94);
+}
+
+.read-more:hover{
+  transform: scale(1.1);
+  background: white;
+}
+
+.project-content{
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+@media (max-width: 1195px) {
+  .project-content {
+    flex: 0 0 100% !important;
+    margin-bottom: 5rem;
+  }
+
+
+  .blog-content {
+  max-width: 90%;
+  background:none;
+  }
+
+}
+
+      </style>
       </head>
       
       <body>
@@ -42,59 +100,81 @@
 
 <!-- ***** Header Area Start ***** -->
 <header class="header-area header-sticky" style="background: #4FA35E;">
-    <div class="container" >
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav" >
-                    <!-- ***** Logo Start ***** -->
-                    <a style="margin-left: 100px" href="index.html" class="logo">
-                        <!-- V Carbon -->
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                        <li class="scroll-to-section"><a href="#projects">About PNG</a></li>
-                        <li class="submenu">
-                            <a href="javascript:;">About Us</a>
-                            <ul>
-                                <li><a href="">Who we are</a></li>
-                                <li><a href="">What we stand for</a></li>
-                                <li><a href="">What's our history</a></li>
-                                <li><a href="">Who's our team</a></li>
-                                <li><a href="">What we do</a></li>
-                                <li><a href="">Why V Carbon ESG Limited</a></li>
-                            </ul>
-                        </li>
-                        <li class="submenu">
-                            <a href="javascript:;">Projects</a>
-                            <ul>
-                                <li><a href="">New Agricultural Development</a></li>
-                                <li><a href="">Infrastructure Development</a></li>
-                                <li><a href="">Forestry Preservation</a></li>
-                                <li><a href="">Renewable Energy</a></li>
-                                <li><a href="">Sustainable City & Community</a></li>
-                            </ul>
-                        </li>
-                        <li class="submenu">
-                            <a href="javascript:;">News</a>
-                            <ul>
-                                <li><a href="">Global Climate Change</a></li>
-                                <li><a href="">PNG Climate Change & Green Development</a></li>
-                                <li><a href="">V Carbon</a></li>
-                            </ul>
-                        </li>
-                        <li class="scroll-to-section"><a href="#contact-us">Contact Us</a></li> 
-                    </ul>        
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
-    </div>
+  <div class="container" >
+      <div class="row">
+          <div class="col-12">
+              <nav class="main-nav" >
+                  <!-- ***** Logo Start ***** -->
+                  <a style="margin-left: 100px" href="index.html" class="logo">
+                      <!-- V Carbon -->
+                  </a>
+                  <!-- ***** Logo End ***** -->
+                  <!-- ***** Menu Start ***** -->
+                  <ul class="nav">
+                    <li class="submenu">
+                      <a href="about-png.html">About PNG</a>
+                      <ul>
+                          <li><a href="about-png.html#country">The Country</a></li>
+                          <li><a href="about-png.html#forest">The Forest</a></li>
+                          <li><a href="about-png.html#people">The People</a></li>
+                      </ul>
+                  </li>
+                      <li class="submenu">
+                          <a href="about-us.html">About Us</a>
+                          <ul>
+                              <li><a href="about-us.html#who-we-are">Who we are</a></li>
+                              <li><a href="about-us.html#what-we-stand-for">What we stand for</a></li>
+                              <li><a href="about-us.html#whats-our-history">What's our history</a></li>
+                              <li><a href="about-us.html#whos-our-team">Who's our team</a></li>
+                              <li><a href="about-us.html#what-we-do">What we do</a></li>
+                              <li><a href="about-us.html#why-vcarbon-esg-ltd">Why V Carbon ESG Limited</a></li>
+                          </ul>
+                      </li>
+                      <!-- <li class="submenu">
+                        <a href="">Projects</a>
+                        <ul>
+                            <li><a href="projects-cocoa-coffee-bamboo.html">Cocoa / Coffee beans / bamboo planting
+                            </a></li>
+                            <li><a href="projects-REDD+.html">Carbon Credit Projects (REDD+)</a></li>
+          
+                        </ul>
+                    </li> -->
+                    <li class="submenu">
+                      <p style="display: block;
+                          color: #fff;
+                      font-weight: 500;
+                      font-size: 14px;
+                      /* color: #7a7a7a; */
+                      text-transform: uppercase;
+                      -webkit-transition: all 0.3s ease 0s;
+                      -moz-transition: all 0.3s ease 0s;
+                      -o-transition: all 0.3s ease 0s;
+                      transition: all 0.3s ease 0s;
+                      height: 40px;
+                      line-height: 40px;
+                      border: transparent;
+                      letter-spacing: 1px;" href="">Projects</p>
+                      <ul>
+                          <li><a href="projects-cocoa-coffee-bamboo.html">Cocoa / Coffee beans / bamboo planting
+                          </a></li>
+                          <li><a href="projects-REDD+.html">Carbon Credit Projects (REDD+)</a></li>
+        
+                      </ul>
+                  </li>
+                      <li class="scroll-to-section">
+                          <a href="news.html">News</a>
+                      </li>
+                      <li class="scroll-to-section"><a href="#contact-us" class="nav-contact-us">Contact Us</a></li> 
+                  </ul>        
+                  <a class='menu-trigger'>
+                      <span>Menu</span>
+                  </a>
+                  <!-- ***** Menu End ***** -->
+              </nav>
+          </div>
+      </div>
+  </div>
 </header>
-
 
     <!-- ***** Main Banner Area Start ***** -->
     <section id="cta" class="projects" style="margin-top: 100px;">
@@ -103,9 +183,9 @@
         <div class="row">
           <div class="col-lg-12 text-center text-lg-start">
             <div >
-              <h1 style="font-weight: 700; text-shadow: 2px 2px 2px black;" class="text-white non-mobile-slogan">Projects</h1>
+              <h1 style="font-weight: 700; text-shadow: 2px 2px 2px black;" class="text-white">Projects</h1>
               <br>
-              <h2 style="font-weight: 700; text-shadow: 2px 2px 2px black;" class="text-white non-mobile-slogan">   <h style="font-weight: 700; text-shadow: 2px 2px 2px black;" class="text-white non-mobile-slogan">“Community-centric Green Development"</h2>
+              <h2 style="font-weight: 700; text-shadow: 2px 2px 2px black;" class="text-white "> <h style="font-weight: 700; text-shadow: 2px 2px 2px black;" class="text-white">“Community-centric Green Development"</h2>
            </div>
             <!-- <p> V Carbon’s primary focus is the preservation of the current green landscape in PNG.</p> -->
           
@@ -117,70 +197,35 @@
       </div>
     </section><!-- End Cta Section -->
 
-	<div id="section2" style="margin-top: -150px;">
+	<div id="section2" class="window-project">
 		<!-- Start Blog Area -->
-		<section id="blog-area">
-			<div class="container">
-				<div class="row text-center inner">
-					<div class="col-sm-6">
-						<div class="blog-content">
-							<img src="./assets/img/2-1.jpg" alt="Image">
-							<h2>Two Column Left Side</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor eros eget eros maximus, ut cursus sem euismod. Donec iaculis tristique odio at consectetur. Nullam dignissim varius suscipit. Sed in leo sit amet velit finibus pretium.</p>
-              <span><a href="#">read more</a></span><br>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="blog-content">
-								<img src="./assets/img/2-2.jpg" alt="Image">
-								<h2>Two Column Right Side</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor eros eget eros maximus, ut cursus sem euismod. Donec iaculis tristique odio at consectetur. Nullam dignissim varius suscipit. Sed in leo sit amet velit finibus pretium.</p>
-									<span><a href="#">read more</a></span><br>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+    <div class="blog-content">
+      <img src="./assets/images/project-left.jpg" style="width: 100%; margin-bottom: 1rem;" alt="Image">
+      <h3 style="margin-bottom: 1rem; font-weight: 500;">Cocoa / Coffee beans / bamboo planting</h3>
+      <!-- <h5 style="text-align: left; padding: 0 1rem;">V Carbon aims to boost coffee and cocoa production and introduce bamboo planting for sustainable income and improved housing in PNG.</h5> -->
+      <h5 style="text-align: left; padding: 0 1rem;">PNG's agriculture contributes significantly to its GDP, with coffee offering employment to a quarter of its population. Despite favorable conditions, PNG's coffee production remains less than 1% of global output. V Carbon aims to enhance production through collaboration with local universities and international producers, fostering sustainable income for local communities.</h5>
+      <!-- <h5 style="text-align: left; padding: 0 1rem;">Cocoa beans and coffee beans planting are quite popular in PNG and V Carbon intends to bring in modern know-hows by working with local universities and overseas producers.  The goal is to help increase production which would potentially help the local people to generate sustainable income.</h5> -->
+      <h5 style="text-align: left; padding: 0 1rem;">V Carbon aims to introduce bamboo planting expertise to locals, enabling the construction of stronger houses and benefiting from bamboo's versatility as a material for scaffolding, building frames, and furniture. Bamboo's additional advantages include its ability to act as a natural air conditioner and purifier, along with its ease of cultivation. </h5>
+      
+      <ul style="text-align: left; margin-left: 2rem; margin-bottom: 1rem; margin-top: 1rem;">
+        <li style="margin-bottom: 1rem !important;"><img src="assets/images/location-icon.png" style="width: 5%; margin-right: 1rem; ">West Brown River, Nuku MAI MAI, Nuku NOPAN, Kamula Dosa</li>
+        <li style="margin-bottom: 1rem !important;"><img src="assets/images/status-icon.png" style="width: 5%; margin-right: 1rem;">Status: Project will start after carbon credit verification.</li>
+        <li style="margin-bottom: 1rem !important;"><img src="assets/images/lifespan-icon.png" style="width: 5%; margin-right: 1rem; "> Project Lifespan: Expected 5 years</li>
+      </ul>
+      <div class="tag-container" style="margin-left: 2rem;">
+        <!-- <div class="tag" style="background-color: lightyellow;">decent work and economic growth </div>
+        <div class="tag" style="background-color: rgb(192, 221, 192);">No poverty </div>
+        <div class="tag" style="background-color: lightblue;">sustainable cities and communities </div>
+        <div class="tag" style="background-color: rgb(221, 170, 170);">industry, innovation and infrastructure</div> -->
+        <img src="./assets/images/SDG Icons 2019_WEB/decent-work-icon.png" alt="" style="width:  15%;">
+        <img src="./assets/images/SDG Icons 2019_WEB/sustainable-cities-icon.png" alt="" style="width:  15%;">
+        <img src="./assets/images/SDG Icons 2019_WEB/no-poverty.png" alt="" style="width:  15%;">
+        <img src="./assets/images/SDG Icons 2019_WEB/industry,innovation-icon.png" alt="" style="width:  15%;">
+      </div>
+      <!-- <a class="read-more">Read More</a> -->
+      </div>
 				<!-- End Blog Area -->
 	</div>
-			<div id="section3">
-				<!-- Start Services Area -->
-				<section id="services-area" class="services-section">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-12 text-center inner our-service">
-								<div class="service">
-									<h1>Our Services</h1>
-									<p style="color: black;">Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id <br>
-										felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia. <br>
-										Etiam a mi quis arcu varius condimentum.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					<!-- End Services Area -->
-
-					<!-- Start Testimornial Area -->
-					<section id="testimornial-area">
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-12">
-									<div class="tm-box">
-										<img src="./assets/img/4-5.jpg" alt="Image" class="img-responsive">
-										<div class="tm-box-description">
-											<h2>One Big Column</h2>
-											<p class="tm-box-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor eros eget eros maximus, ut cursus sem euismod. Donec iaculis tristique odio at consectetur. Nullam dignissim varius suscipit. Sed in leo sit amet velit finibus pretium. Vivamus dictum nisi ac fermentum interdum. Vestibulum vel mauris at erat mattis accumsan et ac lorem. Cras non venenatis orci, sed tincidunt massa. Duis nisl lectus, auctor eu sodales at, dignissim eu orci. Sed vitae venenatis magna, in blandit metus. Praesent volutpat cursus rhoncus. Aenean arcu diam, suscipit ac neque in, sollicitudin convallis orci.</p>
-											<p class="tm-box-p">Fusce eu porta massa, sed tincidunt turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus a urna tellus. Integer pharetra vitae nisi et lacinia. Morbi sagittis justo a velit placerat ullamcorper quis quis velit. Sed convallis at risus ullamcorper auctor. Praesent quis velit neque. Quisque semper porta nisi vitae suscipit. Duis lectus magna, ornare ac scelerisque quis, maximus eget nisi.</p>
-											<a href="#" class="content-link">Read More</a>    
-										</div>                        
-									</div>                    
-								</div>
-							</div>
-						</div>
-					</section>
-					<!-- End Testimornial Area -->
-				</div>
 
           <footer>
             <!-- Footer -->
@@ -237,7 +282,7 @@
                 <!-- Section: CTA -->
                 <section class="">
                   <div class="contact-wrapper">
-                    <h4>Get In Touch With Us</h4>
+                    <h4 class="text-white">Get In Touch With Us</h4>
                     <p style="line-height: 2rem; color:white">Interested in joining force with us?  Our team is always here to help. If you have any questions about our project, you can reach us anytime via <strong>Email: enquiry@vcarbonpng.com</strong>.</p>
                   </div> <!-- /.col-md-12 -->
                 </section>
