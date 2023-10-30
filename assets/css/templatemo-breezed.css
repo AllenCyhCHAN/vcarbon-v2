@@ -173,6 +173,7 @@ p {
   font-size: 14px;
   line-height: 25px;
   color: #777;
+  text-align: justify;
 }
 
 /* 
@@ -1875,8 +1876,9 @@ portfolio
   border: 1px solid #d3d3d3;
   position: relative;
   overflow: hidden;
-  width: 80%;
+  width: 100%;
   margin: auto;
+  /* min-width: 232px; */
 }
 
 .our-team:hover {
@@ -1947,7 +1949,7 @@ portfolio
   position: absolute;
   bottom: 0;
   text-align: right;
-  padding: 20px 16px;
+  padding: 10px 10px;
   background: rgba(0, 0, 0, 0.7);
   transform: translateX(0);
   transition: all 0.2s ease 0s;
@@ -1956,7 +1958,7 @@ portfolio
   transform: translateX(100%);
 } */
 .our-team .team-prof .post-title {
-  font-size: 16px;
+  font-size: 1rem;
   color: #fff;
   margin: 0 0 8px 0;
   text-transform: uppercase;
@@ -2398,7 +2400,7 @@ portfolio
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: url("../images/home-cta.jpg") fixed center center;
+  background: url("../images/about-us-history-2.jpg") fixed center center;
   opacity: 0.9;
   background-size: cover;
   padding: 300px 0;
