@@ -2484,18 +2484,18 @@ portfolio
 }
 
 .about-us {
-  background: url("../images/about-us-history-2.jpg") fixed center bottom !important;
+  background: url("../images/20230821_094115.jpg") fixed center top/cover !important;
   opacity: 0.9;
-  background-size: cover;
+  background-size: contain;
   padding: 240px;
   top: 10px;
 }
 
 .contact-banner {
-  background: url("../images/cta-home.jpg") fixed center center;
+  background: url("../images/20230827_120201.jpg") fixed top center;
   opacity: 0.9;
   background-size: cover;
-  padding: 220px 0;
+  padding: 240px 0;
 }
 
 .cta-quote {
